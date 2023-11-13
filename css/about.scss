@@ -1,0 +1,78 @@
+$green: #244d4d;
+$white: #fff;
+$light-color: #889;
+$light-bg: #f6fbf6;
+$border: 0.1rem solid $green;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .image {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .about-content {
+    flex: 1 1 40rem;
+
+    h3 {
+      font-size: 1.7rem;
+      color: $light-color;
+    }
+
+    h2 {
+      color: $green;
+      font-size: 2.3rem;
+      padding: 1rem 0;
+    }
+
+    p {
+      color: $light-color;
+      font-size: 1.5rem;
+      line-height: 1.8;
+    }
+  }
+}
+
+.services-section {
+  .service-box {
+    @include grid(30rem);
+    margin-top: 2.7rem;
+
+    .box {
+      border: $border;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 0.2rem;
+
+      img {
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $green;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: $light-color;
+      }
+    }
+  }
+}

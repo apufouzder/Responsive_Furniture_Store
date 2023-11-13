@@ -1,0 +1,76 @@
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-section .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about-section .image img {
+  width: 100%;
+}
+
+.about-section .about-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about-section .about-content h3 {
+  font-size: 1.7rem;
+  color: #889;
+}
+
+.about-section .about-content h2 {
+  color: #244d4d;
+  font-size: 2.3rem;
+  padding: 1rem 0;
+}
+
+.about-section .about-content p {
+  color: #889;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.services-section .service-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.7rem;
+}
+
+.services-section .service-box .box {
+  border: 0.1rem solid #244d4d;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+.services-section .service-box .box img {
+  margin-bottom: 1rem;
+}
+
+.services-section .service-box .box h3 {
+  font-size: 2rem;
+  color: #244d4d;
+}
+
+.services-section .service-box .box p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #889;
+}
+/*# sourceMappingURL=about.css.map */
